@@ -7,7 +7,7 @@ import csv
 ia = IMDb()
 
 #updates general Seinfeld file
-Seinfeld = ia.get_movie('0108778')
+Seinfeld = ia.get_movie('0098904')
 ia.update(Seinfeld, 'episodes')
 
 seinseasons={}
@@ -49,7 +49,7 @@ for key, value in seinseasons.items():
 		ratings[i]= [mrating, frating, round(mrating-frating,2)]
 
 #writes data file
-writer = csv.writer(open('sein2.csv', 'wb'))
+writer = csv.writer(open('seinfeld.csv', 'wb'))
 writer.writerow(["episode", "men", "women", "difference"])
 
 for key, value in ratings.items():

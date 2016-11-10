@@ -61,7 +61,7 @@ for key, value in showdic.items():
 
 
 #writes data file
-writer = csv.writer(open('allshows.csv', 'wb'))
+writer = csv.writer(open('nyshows.csv', 'wb'))
 writer.writerow(["show", "mvotes", "maverage", "fvotes", "faverage", "difference"])
 
 for key, value in ratings.items():

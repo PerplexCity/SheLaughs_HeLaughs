@@ -46,7 +46,7 @@ for key, value in friendsseasons.items():
 		ratings[i]= [mrating, frating, mrating-frating]
 
 #writes data file
-writer = csv.writer(open('frenz.csv', 'wb'))
+writer = csv.writer(open('friends.csv', 'wb'))
 writer.writerow(["episode", "men", "women", "difference"])
 
 for key, value in ratings.items():
